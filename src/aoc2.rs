@@ -54,6 +54,7 @@ pub fn aoc2_2() -> Result<()> {
             safe += 1;
         }
     }
+    
     println!("(AOC 2_2) Number of safe reports: {safe}");
 
     Ok(())
