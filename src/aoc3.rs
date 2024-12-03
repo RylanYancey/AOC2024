@@ -24,6 +24,7 @@ pub fn aoc3_1() -> Result<()> {
 pub fn aoc3_2() -> Result<()> {
     let src = std::fs::read_to_string("input/aoc3.txt")?;
 
+    // regex that matches `mul(d+,d+)` or `do()` or `don't()`
     let re = Regex::new(r"mul\(\d+,\d+\)|do\(\)|don't\(\)")?;
 
     let mut cancel = false;
